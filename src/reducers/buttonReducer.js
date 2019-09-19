@@ -7,6 +7,7 @@ const buttonReducer = (state = initialState, action) => {
     case 'ELEVATE':
       return {
         ...state,
+        name: action.name,
       }
     default:
       return state;
