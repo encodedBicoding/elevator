@@ -1,13 +1,17 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { lift } from '../../actions/';
 import './button.scss';
 
-const Button = ({ value, handleClick }) => {
+const Button = ({ value, lift, name }) => {
+
   return (
     <div className="button-container">
       <div className="button-wrapper">
         <div className="button-inner">
           <button
-            onClick={handleClick}
+            onClick={(e) => lift(e)}
+            name={name}
           >
             {
               value
@@ -19,4 +23,4 @@ const Button = ({ value, handleClick }) => {
   )
 }
 
-export default Button;
+export default connect(null, { lift })(Button);

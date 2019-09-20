@@ -1,5 +1,5 @@
 const initialState = {
-  name: ''
+  floor: ''
 }
 
 const buttonReducer = (state = initialState, action) => {
@@ -7,6 +7,7 @@ const buttonReducer = (state = initialState, action) => {
     case 'ELEVATE':
       return {
         ...state,
+        floor: action.name,
       }
     default:
       return state;

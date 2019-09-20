@@ -1,9 +1,11 @@
-.button-container{
-    display: inline;;
+.button-container,
+.button-wrapper,
+.button-inner{
+    display: inline;
 }
 
 .button-wrapper{
-    padding: .3px;
+    padding: .7px;
 
     button {
         padding: 8px;
@@ -13,7 +15,7 @@
         background-color: #fff;
         cursor: pointer;
         outline: none;
-        font-size: .9em;
+        font-size: 1.5em;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         transition: all .8s;
 
